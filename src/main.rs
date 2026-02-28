@@ -1,5 +1,4 @@
 use std::io;
-use rand::Rng;
 
 enum State {
     RUNNING,
@@ -12,9 +11,7 @@ fn main() {
 
     println!("I am thinking of a number from 1 to 100...");
     let rand_num: u8 = rand::random_range(1..=100);
-    let low:  u8 = rand_num - 1;
-    let high: u8 = rand_num + 1;
-    println!("SECRET: Random number = {rand_num}");
+    //println!("SECRET: Random number = {rand_num}");
 
     let mut n_guess: u8 = 7;
     let mut state: State = State::RUNNING;
