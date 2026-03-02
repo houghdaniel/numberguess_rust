@@ -37,6 +37,7 @@ fn main() {
                     println!("Your guess of {} was correct!", guess_u8);
                     n_guess -= 1;
                     state = State::WON;
+                    continue;
 
                 } else if guess_u8 >= 1 && guess_u8 < rand_num {
                     // Guess is too low
